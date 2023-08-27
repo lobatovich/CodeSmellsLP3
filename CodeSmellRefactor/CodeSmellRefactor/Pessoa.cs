@@ -14,6 +14,16 @@ namespace CodeSmellRefactor
         public string Telefone { get; set; }
         public string Email { get; set; }
 
+        public Pessoa(string nome, int idade, string endereco, string telefone, string email)
+        {
+            this.Nome = nome;
+            this.Idade = idade;
+            this.Endereco = endereco;
+            this.Telefone = telefone;
+            this.Email = email;
+            
+        }
+
         public virtual void ImprimeInformacoes()
         {
             Console.WriteLine("Nome: {0}", this.Nome);
